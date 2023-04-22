@@ -1,6 +1,10 @@
 import React from "react";
 import "./App.css";
-import Hello from "./page/Hello";
+import Box from "./page/box";
+import "./page/style.module.scss"
+import { Reset } from 'styled-reset'
+
+
 
 function App() {
   const name = "react";
@@ -13,7 +17,9 @@ function App() {
   };
   return (
     <div>
-      <Hello />
+      <Reset/>
+      <Box />
+      <Box />
       <div style={style}>{name}</div>
     </div>
   );

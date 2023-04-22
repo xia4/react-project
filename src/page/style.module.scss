@@ -1,0 +1,19 @@
+@mixin set-color {
+    color: #000;
+    background-color: yellow;
+}
+.box {
+    width: 400px;
+    height: 400px;
+}
+.medium {
+    width: 300px;
+    height: 300px;
+    border: 1px solid red;
+}
+.blue {
+    @include set-color()
+}
+.margin {
+    margin: 0 auto;
+}
